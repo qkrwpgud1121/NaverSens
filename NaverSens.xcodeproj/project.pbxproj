@@ -7,15 +7,22 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		250608672C94266C008864D4 /* CourntryTableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 250608662C94266C008864D4 /* CourntryTableView.swift */; };
+		250608692C9426FE008864D4 /* CountryCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 250608682C9426FE008864D4 /* CountryCell.swift */; };
 		254537BD2C92E25D0081A8AB /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 254537BC2C92E25D0081A8AB /* AppDelegate.swift */; };
 		254537BF2C92E25D0081A8AB /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 254537BE2C92E25D0081A8AB /* SceneDelegate.swift */; };
 		254537C12C92E25D0081A8AB /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 254537C02C92E25D0081A8AB /* ViewController.swift */; };
 		254537C42C92E25D0081A8AB /* Base in Resources */ = {isa = PBXBuildFile; fileRef = 254537C32C92E25D0081A8AB /* Base */; };
 		254537C62C92E25E0081A8AB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 254537C52C92E25E0081A8AB /* Assets.xcassets */; };
 		254537C92C92E25E0081A8AB /* Base in Resources */ = {isa = PBXBuildFile; fileRef = 254537C82C92E25E0081A8AB /* Base */; };
+		25944BBC2C9BE95600380447 /* CountryModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25944BBB2C9BE95600380447 /* CountryModel.swift */; };
+		25A8C2152C9D0EE300DF73C8 /* Country.json in Resources */ = {isa = PBXBuildFile; fileRef = 25A8C2142C9D0EE300DF73C8 /* Country.json */; };
+		CCE93400B4EEA1E793120F06 /* Pods_NaverSens.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3FF45B4F3F9A8324701EA5A7 /* Pods_NaverSens.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		250608662C94266C008864D4 /* CourntryTableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CourntryTableView.swift; sourceTree = "<group>"; };
+		250608682C9426FE008864D4 /* CountryCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CountryCell.swift; sourceTree = "<group>"; };
 		254537B92C92E25D0081A8AB /* NaverSens.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = NaverSens.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		254537BC2C92E25D0081A8AB /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		254537BE2C92E25D0081A8AB /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -24,6 +31,11 @@
 		254537C52C92E25E0081A8AB /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		254537C82C92E25E0081A8AB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		254537CA2C92E25E0081A8AB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		25944BBB2C9BE95600380447 /* CountryModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CountryModel.swift; sourceTree = "<group>"; };
+		25A8C2142C9D0EE300DF73C8 /* Country.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = Country.json; sourceTree = "<group>"; };
+		3CE896AE1179FC6D06E289B2 /* Pods-NaverSens.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NaverSens.debug.xcconfig"; path = "Target Support Files/Pods-NaverSens/Pods-NaverSens.debug.xcconfig"; sourceTree = "<group>"; };
+		3FF45B4F3F9A8324701EA5A7 /* Pods_NaverSens.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_NaverSens.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		7C92494922514C5E8746EA7F /* Pods-NaverSens.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NaverSens.release.xcconfig"; path = "Target Support Files/Pods-NaverSens/Pods-NaverSens.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,6 +43,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CCE93400B4EEA1E793120F06 /* Pods_NaverSens.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -42,6 +55,8 @@
 			children = (
 				254537BB2C92E25D0081A8AB /* NaverSens */,
 				254537BA2C92E25D0081A8AB /* Products */,
+				41B26B9EC75EB4858D0C1248 /* Pods */,
+				3BE9FB84BACCCCAE4F2AB007 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -59,12 +74,33 @@
 				254537BC2C92E25D0081A8AB /* AppDelegate.swift */,
 				254537BE2C92E25D0081A8AB /* SceneDelegate.swift */,
 				254537C02C92E25D0081A8AB /* ViewController.swift */,
+				250608662C94266C008864D4 /* CourntryTableView.swift */,
+				250608682C9426FE008864D4 /* CountryCell.swift */,
+				25944BBB2C9BE95600380447 /* CountryModel.swift */,
 				254537C22C92E25D0081A8AB /* Main.storyboard */,
 				254537C52C92E25E0081A8AB /* Assets.xcassets */,
 				254537C72C92E25E0081A8AB /* LaunchScreen.storyboard */,
 				254537CA2C92E25E0081A8AB /* Info.plist */,
+				25A8C2142C9D0EE300DF73C8 /* Country.json */,
 			);
 			path = NaverSens;
+			sourceTree = "<group>";
+		};
+		3BE9FB84BACCCCAE4F2AB007 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				3FF45B4F3F9A8324701EA5A7 /* Pods_NaverSens.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		41B26B9EC75EB4858D0C1248 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				3CE896AE1179FC6D06E289B2 /* Pods-NaverSens.debug.xcconfig */,
+				7C92494922514C5E8746EA7F /* Pods-NaverSens.release.xcconfig */,
+			);
+			path = Pods;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -74,9 +110,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 254537CD2C92E25E0081A8AB /* Build configuration list for PBXNativeTarget "NaverSens" */;
 			buildPhases = (
+				C95FE448DC3F7BE52F89C750 /* [CP] Check Pods Manifest.lock */,
 				254537B52C92E25D0081A8AB /* Sources */,
 				254537B62C92E25D0081A8AB /* Frameworks */,
 				254537B72C92E25D0081A8AB /* Resources */,
+				52C489A9BD3AF1D2A5042A7A /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -109,6 +147,7 @@
 			knownRegions = (
 				en,
 				Base,
+				ko,
 			);
 			mainGroup = 254537B02C92E25D0081A8AB;
 			productRefGroup = 254537BA2C92E25D0081A8AB /* Products */;
@@ -125,6 +164,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				25A8C2152C9D0EE300DF73C8 /* Country.json in Resources */,
 				254537C62C92E25E0081A8AB /* Assets.xcassets in Resources */,
 				254537C92C92E25E0081A8AB /* Base in Resources */,
 				254537C42C92E25D0081A8AB /* Base in Resources */,
@@ -133,6 +173,48 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		52C489A9BD3AF1D2A5042A7A /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-NaverSens/Pods-NaverSens-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-NaverSens/Pods-NaverSens-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-NaverSens/Pods-NaverSens-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		C95FE448DC3F7BE52F89C750 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-NaverSens-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		254537B52C92E25D0081A8AB /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
@@ -140,7 +222,10 @@
 			files = (
 				254537C12C92E25D0081A8AB /* ViewController.swift in Sources */,
 				254537BD2C92E25D0081A8AB /* AppDelegate.swift in Sources */,
+				250608692C9426FE008864D4 /* CountryCell.swift in Sources */,
 				254537BF2C92E25D0081A8AB /* SceneDelegate.swift in Sources */,
+				250608672C94266C008864D4 /* CourntryTableView.swift in Sources */,
+				25944BBC2C9BE95600380447 /* CountryModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -171,6 +256,7 @@
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
@@ -203,7 +289,7 @@
 				DEBUG_INFORMATION_FORMAT = dwarf;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				ENABLE_TESTABILITY = YES;
-				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = NO;
 				GCC_C_LANGUAGE_STANDARD = gnu17;
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_NO_COMMON_BLOCKS = YES;
@@ -234,6 +320,7 @@
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
@@ -266,7 +353,7 @@
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				ENABLE_NS_ASSERTIONS = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = NO;
 				GCC_C_LANGUAGE_STANDARD = gnu17;
 				GCC_NO_COMMON_BLOCKS = YES;
 				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
@@ -287,12 +374,14 @@
 		};
 		254537CE2C92E25E0081A8AB /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3CE896AE1179FC6D06E289B2 /* Pods-NaverSens.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = 289G429944;
+				DEVELOPMENT_TEAM = AV4C82XPGK;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = NaverSens/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
@@ -307,6 +396,7 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = edu.NaverSens;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -315,12 +405,14 @@
 		};
 		254537CF2C92E25E0081A8AB /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7C92494922514C5E8746EA7F /* Pods-NaverSens.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = 289G429944;
+				DEVELOPMENT_TEAM = AV4C82XPGK;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = NaverSens/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
@@ -335,6 +427,7 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = edu.NaverSens;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
