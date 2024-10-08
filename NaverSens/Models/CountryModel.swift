@@ -18,25 +18,21 @@ struct List: Codable {
     let countryCode: String
 }
 
-struct Request: Codable{
+struct Request: Encodable{
     let type: String
-    let countentType: String
     let countryCode: String
     let from: String
-    let subject: String
     let content: String
     let messages: [Messages]
-    let files: [Files]
-    let reserveTime: String
-    let reserveTimeZone: String
 }
 
-struct Messages: Codable {
+struct Messages: Encodable {
     let to: String
-    let subject: String
-    let content: String
 }
 
-struct Files: Codable {
-    let fileId: String
+struct Response: Decodable {
+    let requestId: String
+    let requestTime: String
+    let statusCode: String
+    let statusName: String
 }
