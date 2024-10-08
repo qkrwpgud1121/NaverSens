@@ -6,7 +6,7 @@ target 'NaverSens' do
   use_frameworks!
 
   pod 'naveridlogin-sdk-ios'
-
+  pod 'Alamofire'
   # Pods for NaverSens
 
 end

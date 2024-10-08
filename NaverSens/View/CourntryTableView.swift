@@ -22,7 +22,6 @@ class CourntryTableView: UIViewController {
         super.viewDidLoad()
         
         initUI()
-        searchBarUI()
     }
     
     func initUI() {
@@ -57,12 +56,6 @@ class CourntryTableView: UIViewController {
         }
     }
     
-    func searchBarUI() {
-        searchBar.delegate = self
-        searchBar.showsCancelButton = false
-        searchBar.searchBarStyle = .minimal
-    }
-    
 }
 
 extension CourntryTableView: UITableViewDataSource {
@@ -75,7 +68,7 @@ extension CourntryTableView: UITableViewDataSource {
         let cell = countryTableView.dequeueReusableCell(withIdentifier: "CountryCell", for: indexPath) as! CountryCell
         
         let country = filteredCountries[indexPath.row]
-        cell.countryName.text = country.country
+        cell.countryName.text = country.name
         
         return cell
     }
@@ -95,48 +88,9 @@ extension CourntryTableView: UITableViewDelegate {
         let preVC = self.presentingViewController
         
         guard let VC = preVC as? ViewController else { return }
-        VC.paramName = selectedCountry.country
+        VC.paramName = selectedCountry.name
         VC.paramCode = selectedCountry.code
         
         self.presentingViewController?.dismiss(animated: true)
     }
-}
-
-extension CourntryTableView: UISearchBarDelegate {
-    
-    func searchBarTextDidBeginEditing(_ searchBar: UISearchBar) {
-        
-        self.searchBar.showsCancelButton = true
-        
-        // self.reload()
-    }
-    
-    func searchBar(_ searchBar: UISearchBar, textDidChange searchText: String) {
-        
-        if searchText.isEmpty {
-            filteredCountries = countries
-        } else {
-            filteredCountries = countries.filter { $0.country.lowercased().contains(searchText.lowercased())}
-        }
-        
-        self.reload()
-    }
-    
-    func searchBarCancelButtonClicked(_ searchBar: UISearchBar) {
-        
-        self.searchBar.text = ""
-        filteredCountries = countries
-        self.reload()
-        self.searchBar.resignFirstResponder()
-        self.searchBar.showsCancelButton = false
-        
-        
-        
-        
-    }
-    
-    func reload() {
-        self.countryTableView.reloadData()
-    }
-    
 }

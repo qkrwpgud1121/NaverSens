@@ -3,40 +3,38 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 56;
+	objectVersion = 70;
 	objects = {
 
 /* Begin PBXBuildFile section */
-		250608672C94266C008864D4 /* CourntryTableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 250608662C94266C008864D4 /* CourntryTableView.swift */; };
-		250608692C9426FE008864D4 /* CountryCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 250608682C9426FE008864D4 /* CountryCell.swift */; };
 		254537BD2C92E25D0081A8AB /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 254537BC2C92E25D0081A8AB /* AppDelegate.swift */; };
 		254537BF2C92E25D0081A8AB /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 254537BE2C92E25D0081A8AB /* SceneDelegate.swift */; };
-		254537C12C92E25D0081A8AB /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 254537C02C92E25D0081A8AB /* ViewController.swift */; };
 		254537C42C92E25D0081A8AB /* Base in Resources */ = {isa = PBXBuildFile; fileRef = 254537C32C92E25D0081A8AB /* Base */; };
 		254537C62C92E25E0081A8AB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 254537C52C92E25E0081A8AB /* Assets.xcassets */; };
 		254537C92C92E25E0081A8AB /* Base in Resources */ = {isa = PBXBuildFile; fileRef = 254537C82C92E25E0081A8AB /* Base */; };
-		25944BBC2C9BE95600380447 /* CountryModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25944BBB2C9BE95600380447 /* CountryModel.swift */; };
 		25A8C2152C9D0EE300DF73C8 /* Country.json in Resources */ = {isa = PBXBuildFile; fileRef = 25A8C2142C9D0EE300DF73C8 /* Country.json */; };
 		CCE93400B4EEA1E793120F06 /* Pods_NaverSens.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3FF45B4F3F9A8324701EA5A7 /* Pods_NaverSens.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		250608662C94266C008864D4 /* CourntryTableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CourntryTableView.swift; sourceTree = "<group>"; };
-		250608682C9426FE008864D4 /* CountryCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CountryCell.swift; sourceTree = "<group>"; };
 		254537B92C92E25D0081A8AB /* NaverSens.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = NaverSens.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		254537BC2C92E25D0081A8AB /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		254537BE2C92E25D0081A8AB /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		254537C02C92E25D0081A8AB /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		254537C32C92E25D0081A8AB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		254537C52C92E25E0081A8AB /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		254537C82C92E25E0081A8AB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		254537CA2C92E25E0081A8AB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		25944BBB2C9BE95600380447 /* CountryModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CountryModel.swift; sourceTree = "<group>"; };
 		25A8C2142C9D0EE300DF73C8 /* Country.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = Country.json; sourceTree = "<group>"; };
 		3CE896AE1179FC6D06E289B2 /* Pods-NaverSens.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NaverSens.debug.xcconfig"; path = "Target Support Files/Pods-NaverSens/Pods-NaverSens.debug.xcconfig"; sourceTree = "<group>"; };
 		3FF45B4F3F9A8324701EA5A7 /* Pods_NaverSens.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_NaverSens.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		7C92494922514C5E8746EA7F /* Pods-NaverSens.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NaverSens.release.xcconfig"; path = "Target Support Files/Pods-NaverSens/Pods-NaverSens.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
+
+/* Begin PBXFileSystemSynchronizedRootGroup section */
+		25A90F002CB4F32900DC4807 /* Models */ = {isa = PBXFileSystemSynchronizedRootGroup; explicitFileTypes = {}; explicitFolders = (); path = Models; sourceTree = "<group>"; };
+		25A90F012CB4F32D00DC4807 /* Services */ = {isa = PBXFileSystemSynchronizedRootGroup; explicitFileTypes = {}; explicitFolders = (); path = Services; sourceTree = "<group>"; };
+		25A90F032CB4F36100DC4807 /* Views */ = {isa = PBXFileSystemSynchronizedRootGroup; explicitFileTypes = {}; explicitFolders = (); path = Views; sourceTree = "<group>"; };
+/* End PBXFileSystemSynchronizedRootGroup section */
 
 /* Begin PBXFrameworksBuildPhase section */
 		254537B62C92E25D0081A8AB /* Frameworks */ = {
@@ -71,12 +69,11 @@
 		254537BB2C92E25D0081A8AB /* NaverSens */ = {
 			isa = PBXGroup;
 			children = (
+				25A90F032CB4F36100DC4807 /* Views */,
+				25A90F012CB4F32D00DC4807 /* Services */,
+				25A90F002CB4F32900DC4807 /* Models */,
 				254537BC2C92E25D0081A8AB /* AppDelegate.swift */,
 				254537BE2C92E25D0081A8AB /* SceneDelegate.swift */,
-				254537C02C92E25D0081A8AB /* ViewController.swift */,
-				250608662C94266C008864D4 /* CourntryTableView.swift */,
-				250608682C9426FE008864D4 /* CountryCell.swift */,
-				25944BBB2C9BE95600380447 /* CountryModel.swift */,
 				254537C22C92E25D0081A8AB /* Main.storyboard */,
 				254537C52C92E25E0081A8AB /* Assets.xcassets */,
 				254537C72C92E25E0081A8AB /* LaunchScreen.storyboard */,
@@ -119,6 +116,11 @@
 			buildRules = (
 			);
 			dependencies = (
+			);
+			fileSystemSynchronizedGroups = (
+				25A90F002CB4F32900DC4807 /* Models */,
+				25A90F012CB4F32D00DC4807 /* Services */,
+				25A90F032CB4F36100DC4807 /* Views */,
 			);
 			name = NaverSens;
 			productName = NaverSens;
@@ -220,12 +222,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				254537C12C92E25D0081A8AB /* ViewController.swift in Sources */,
 				254537BD2C92E25D0081A8AB /* AppDelegate.swift in Sources */,
-				250608692C9426FE008864D4 /* CountryCell.swift in Sources */,
 				254537BF2C92E25D0081A8AB /* SceneDelegate.swift in Sources */,
-				250608672C94266C008864D4 /* CourntryTableView.swift in Sources */,
-				25944BBC2C9BE95600380447 /* CountryModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -381,7 +379,7 @@
 				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = AV4C82XPGK;
+				DEVELOPMENT_TEAM = 289G429944;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = NaverSens/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
@@ -412,7 +410,7 @@
 				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = AV4C82XPGK;
+				DEVELOPMENT_TEAM = 289G429944;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = NaverSens/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;

@@ -15,7 +15,7 @@ class ViewController: UIViewController {
     @IBOutlet weak var countryName: UILabel!
     
     var paramName: String = "대한민국"
-    var paramCode: String = "+82"
+    var paramCode: String = "82"
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -26,7 +26,7 @@ class ViewController: UIViewController {
     override func viewWillAppear(_ animated: Bool) {
         
         countryName.text = paramName
-        countryNum.text = paramCode
+        countryNum.text = "+\(paramCode)"
     }
     
     @IBAction func requestSMS(_ sender: UIButton) {

@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="32700.99.1234" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="ivr-iw-ygq">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="23094" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="ivr-iw-ygq">
     <device id="retina6_12" orientation="portrait" appearance="light"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="22685"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="23084"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
@@ -165,7 +165,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" restorationIdentifier="CourntryTableView" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="oNn-9N-5dS">
-                                <rect key="frame" x="0.0" y="64" width="393" height="788"/>
+                                <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                 <prototypes>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" restorationIdentifier="CountryCell" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="CountryCell" id="mDD-ew-Xo6" customClass="CountryCell" customModule="NaverSens" customModuleProvider="target">
@@ -195,47 +195,19 @@
                                     </tableViewCell>
                                 </prototypes>
                             </tableView>
-                            <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="gYz-d1-i4I">
-                                <rect key="frame" x="16" y="8" width="361" height="48"/>
-                                <subviews>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="FPz-Ut-wJq">
-                                        <rect key="frame" x="0.0" y="0.0" width="48" height="48"/>
-                                        <constraints>
-                                            <constraint firstAttribute="width" constant="48" id="IPO-h9-fFU"/>
-                                            <constraint firstAttribute="height" constant="48" id="hbk-nn-lDA"/>
-                                        </constraints>
-                                        <state key="normal" title="Button"/>
-                                        <buttonConfiguration key="configuration" style="plain" image="chevron.backward" catalog="system"/>
-                                    </button>
-                                    <searchBar contentMode="redraw" translatesAutoresizingMaskIntoConstraints="NO" id="CLx-Bg-56c">
-                                        <rect key="frame" x="48" y="0.0" width="313" height="48"/>
-                                        <textInputTraits key="textInputTraits"/>
-                                        <connections>
-                                            <outlet property="delegate" destination="daT-16-gYf" id="w5c-Xk-Eyt"/>
-                                        </connections>
-                                    </searchBar>
-                                </subviews>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="48" id="Lhx-tI-fkb"/>
-                                </constraints>
-                            </stackView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="T3I-ox-WNd"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
-                            <constraint firstItem="T3I-ox-WNd" firstAttribute="trailing" secondItem="gYz-d1-i4I" secondAttribute="trailing" constant="16" id="0hM-TT-MSR"/>
                             <constraint firstItem="T3I-ox-WNd" firstAttribute="trailing" secondItem="oNn-9N-5dS" secondAttribute="trailing" id="DPK-1M-3fr"/>
                             <constraint firstItem="T3I-ox-WNd" firstAttribute="bottom" secondItem="oNn-9N-5dS" secondAttribute="bottom" id="Enr-5H-DvL"/>
                             <constraint firstItem="oNn-9N-5dS" firstAttribute="leading" secondItem="T3I-ox-WNd" secondAttribute="leading" id="KU3-TG-N2P"/>
-                            <constraint firstItem="gYz-d1-i4I" firstAttribute="leading" secondItem="T3I-ox-WNd" secondAttribute="leading" constant="16" id="YZ9-ww-RNX"/>
-                            <constraint firstItem="gYz-d1-i4I" firstAttribute="top" secondItem="T3I-ox-WNd" secondAttribute="top" constant="8" id="n1j-Kz-wwn"/>
-                            <constraint firstItem="oNn-9N-5dS" firstAttribute="top" secondItem="gYz-d1-i4I" secondAttribute="bottom" constant="8" id="ssl-iv-70x"/>
+                            <constraint firstItem="oNn-9N-5dS" firstAttribute="top" secondItem="T3I-ox-WNd" secondAttribute="top" id="bqu-Pq-qa4"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="1PH-t5-9wV"/>
                     <connections>
                         <outlet property="countryTableView" destination="oNn-9N-5dS" id="VHP-cp-WBk"/>
-                        <outlet property="searchBar" destination="CLx-Bg-56c" id="Mhw-oa-UTj"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="6Bv-Gf-ec3" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -244,7 +216,6 @@
         </scene>
     </scenes>
     <resources>
-        <image name="chevron.backward" catalog="system" width="97" height="128"/>
         <image name="ic_down-29" width="29" height="29"/>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
