@@ -23,14 +23,15 @@ struct Request: Encodable{
     let countryCode: String
     let from: String
     let content: String
-    let messages: [Messages]
+    let messages: [SMSMessages]
 }
 
-struct Messages: Encodable {
+struct SMSMessages: Encodable {
     let to: String
+    let content: String
 }
 
-struct Response: Decodable {
+struct SMSResponse: Decodable {
     let requestId: String
     let requestTime: String
     let statusCode: String

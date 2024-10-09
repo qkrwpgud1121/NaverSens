@@ -87,7 +87,7 @@ extension CourntryTableView: UITableViewDelegate {
         
         let preVC = self.presentingViewController
         
-        guard let VC = preVC as? ViewController else { return }
+        guard let VC = preVC as? CountryViewController else { return }
         VC.paramName = selectedCountry.name
         VC.paramCode = selectedCountry.code
         
