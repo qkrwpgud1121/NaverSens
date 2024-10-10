@@ -36,4 +36,11 @@ struct SMSResponse: Decodable {
     let requestTime: String
     let statusCode: String
     let statusName: String
+    
+    enum CodingKeys: String, CodingKey {
+        case requestId = "requestId",
+             requestTime = "requestTime",
+             statusCode = "statusCode",
+             statusName = "statusName"
+    }
 }

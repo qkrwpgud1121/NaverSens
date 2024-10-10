@@ -29,11 +29,11 @@ class CountryViewController: UIViewController {
     
     private func setupViewModel() {
         viewModel = CountryViewModel(
-            accessKey:
-            secretKey:
-            serviceId:
-            senderPhone: 
-            
+            accessKey: "",
+            secretKey: "",
+            serviceId: "",
+            senderPhone: "",
+            countryCode: countryNum.text!
         )
     }
     
@@ -64,15 +64,12 @@ class CountryViewController: UIViewController {
     
     @IBAction func requestAuth(_ sender: UIButton) {
         
-        if verificationNum.text?.isEmpty == true {
-            print("number is empty")
-            return
+        if verificationNum.text! == code {
+            print("인증 성공")
         } else {
-            if verificationNum.text != code {
-                print("not correct code")
-                return
-            }
+            print("인증 실패")
         }
+        
     }
     
     func randomCode() -> String {

@@ -8,10 +8,10 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
+        <!--Country View Controller-->
         <scene sceneID="AgC-gX-i6d">
             <objects>
-                <viewController id="ivr-iw-ygq" customClass="ViewController" customModule="NaverSens" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="ivr-iw-ygq" customClass="CountryViewController" customModule="NaverSens" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="w3p-AI-Pme">
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -78,7 +78,7 @@
                                     <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="인증번호 입력" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="ofR-ro-44i">
                                         <rect key="frame" x="0.0" y="0.0" width="209.33333333333334" height="48"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                        <textInputTraits key="textInputTraits" keyboardType="numberPad"/>
+                                        <textInputTraits key="textInputTraits" keyboardType="numberPad" textContentType="one-time-code"/>
                                     </textField>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="XTZ-PT-uId">
                                         <rect key="frame" x="225.33333333333329" y="0.0" width="103.66666666666666" height="48"/>
@@ -89,7 +89,7 @@
                                             <color key="baseForegroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         </buttonConfiguration>
                                         <connections>
-                                            <action selector="requestSMS:" destination="ivr-iw-ygq" eventType="touchUpInside" id="7GD-B1-wim"/>
+                                            <action selector="requestSMS:" destination="ivr-iw-ygq" eventType="touchUpInside" id="jZI-Qo-nEf"/>
                                         </connections>
                                     </button>
                                 </subviews>
@@ -115,7 +115,7 @@
                                     <fontDescription key="titleFontDescription" type="boldSystem" pointSize="14"/>
                                 </buttonConfiguration>
                                 <connections>
-                                    <action selector="requestAuth:" destination="ivr-iw-ygq" eventType="touchUpInside" id="NgD-8w-13Q"/>
+                                    <action selector="requestAuth:" destination="ivr-iw-ygq" eventType="touchUpInside" id="2dG-Jo-7i9"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -146,10 +146,10 @@
                         </constraints>
                     </view>
                     <connections>
-                        <outlet property="countryName" destination="qex-ed-Gj3" id="g9N-5k-2Iv"/>
-                        <outlet property="countryNum" destination="uoC-cm-pWZ" id="wCa-mj-o7a"/>
-                        <outlet property="phoneNum" destination="FeQ-0p-mjq" id="BRV-1G-jBH"/>
-                        <outlet property="verificationNum" destination="ofR-ro-44i" id="oXh-ea-Zn0"/>
+                        <outlet property="countryName" destination="qex-ed-Gj3" id="4pe-yA-aFn"/>
+                        <outlet property="countryNum" destination="uoC-cm-pWZ" id="zfE-3p-VpA"/>
+                        <outlet property="phoneNum" destination="FeQ-0p-mjq" id="Dub-zj-a72"/>
+                        <outlet property="verificationNum" destination="ofR-ro-44i" id="2lC-LB-qZF"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="sIy-Mh-W0X" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -169,14 +169,14 @@
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                 <prototypes>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" restorationIdentifier="CountryCell" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="CountryCell" id="mDD-ew-Xo6" customClass="CountryCell" customModule="NaverSens" customModuleProvider="target">
-                                        <rect key="frame" x="0.0" y="50" width="393" height="20.666666030883789"/>
+                                        <rect key="frame" x="0.0" y="50" width="393" height="21"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="mDD-ew-Xo6" id="l90-KJ-Nam">
-                                            <rect key="frame" x="0.0" y="0.0" width="393" height="20.666666030883789"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="393" height="21"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jSl-1a-DuZ">
-                                                    <rect key="frame" x="32" y="0.0" width="329" height="20.666666666666668"/>
+                                                    <rect key="frame" x="32" y="0.0" width="329" height="21"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                     <nil key="textColor"/>
                                                     <nil key="highlightedColor"/>
